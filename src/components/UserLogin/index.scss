@@ -1,0 +1,33 @@
+@import '../../styles/mixin';
+
+.user-login{
+    width: 100%;
+    position: relative;
+
+    .user-login-img{
+        @include wh(100%, 390px);
+        .user-login-headPortrait{
+            position: absolute;
+            top: 46px;
+            left: 50%;
+            transform: translate(-50%,0);
+            text-align: center;
+
+            .img{
+                @include wh(148px, 148px);
+                border-radius: 50%;
+                margin-bottom: 20px;
+
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .text{
+                font-size:36px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(255,255,255,1);
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@import '../../styles/mixin';
+@import "~taro-ui/dist/style/components/input-number.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.purchase-list{
+    width: 100%;
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+    padding-bottom: 100px;
+    transition: transform 300ms cubic-bezier(.36,.66,.04,1);
+    transform: translate3d(0,100%,0);
+
+    &.hidden{
+        transform: translate3d(0,100%,0);
+    }
+
+    &.block{
+        transform: translate3d(0,0,0);
+    }
+
+    .purchase-list-handImg{
+        @include wh(300px, 236px);
+        margin-left: 20px;
+        display: inline-block;
+        margin-top: -52px;
+        vertical-align: middle;
+        
+        .taro-img{
+            height: 100%;
+        }
+    }
+
+    .purchase-list-handPice{
+        display: inline-block;
+        margin-left: 30px;
+        padding-top: 30px;
+        vertical-align: middle;
+
+        .a{
+            display: block;
+            font-size:36px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(246,77,77,1);
+        }
+        .b{
+            display: block;
+            font-size:24px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(102,102,102,1);
+            line-height: 48px;
+            margin-left: 10px;
+        }
+    }
+
+    .content{
+        width: 100%;
+        border-top:1px solid  rgba(237,237,237,1);
+        border-bottom:1px solid  rgba(237,237,237,1);
+        margin-top: 28px;
+        padding: 0 28px;
+        padding-bottom: 28px;
+        box-sizing: border-box;
+
+        .content-list{
+            width: 100%;
+            overflow: hidden;
+
+            .content-list-dv{
+                float: left;
+                width: 47%;
+                line-height: 117px;
+                background:#fff;
+                border-radius:20px;
+                padding: 10px;
+                box-sizing: border-box;
+                font-size: 0;
+                margin-top: 28px;
+
+                &.active{
+                    background:rgba(244,244,244,1);
+                }
+
+                .img{
+                    display: inline-block;
+                    @include wh(100px, 100px);
+                    vertical-align: middle;
+
+                    .taro-img{
+                        height: 100%;
+                    }
+                }
+
+                .text{
+                    display: inline-block;
+                    font-size:24px;
+                    font-family:PingFang SC;
+                    font-weight:400;
+                    color:rgba(102,102,102,1);
+                    margin-left: 10px;
+                    vertical-align: middle;
+                }
+
+                &:nth-child(odd){
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        .content-num{
+            width: 100%;
+            padding-top: 28px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            .content-num-left{
+                float: left;
+                font-size:30px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                line-height:56px;
+            }
+
+            .content-num-right{
+                float: right;
+            }
+        }
+
+        &.ts{
+            margin-top: 0;
+            border-top: 0 none;
+        }
+    }
+}

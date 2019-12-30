@@ -1,0 +1,92 @@
+@import '../../styles/mixin';
+
+.orderList{
+    @include wh(100%, 100%);
+
+    .settlement-page-box{
+        width: 100%;
+        padding: 22px 28px;
+        box-sizing: border-box;
+        background: #fff;
+        margin-bottom: 20px;
+    
+        .settlement-page-box-list{
+        width: 100%;
+        overflow: hidden;
+    
+        .settlement-page-box-list-left{
+            float: left;
+            width: 156px;
+            height: 156px;
+            border:2px solid rgba(237, 237, 237, 1);
+        }
+        .settlement-page-box-list-right{
+            float: right;
+            margin-left: 16px;
+            width: 74%;
+    
+            .a{
+            width: 100%;
+            overflow: hidden;
+    
+            .a-l{
+                width: 60%;
+                float: left;
+                font-size:26px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:rgba(40,40,40,1);
+                margin-top: 6px;
+            }
+            .a-r{
+                float: right;
+    
+                span{
+                display: block;
+                text-align: right;
+    
+                &:nth-child(1){
+                    font-size:30px;
+                    font-family:PingFang SC;
+                    font-weight:400;
+                    color:rgba(88,88,88,1);
+                }
+                &:nth-child(2){
+                    font-size:26px;
+                    font-family:PingFang SC;
+                    font-weight:400;
+                    color:rgba(152,152,152,1);
+                }
+                }
+            }
+            }
+            .b{
+            font-size:24px;
+            font-family:PingFang SC;
+            font-weight:400;
+            color:rgba(152,152,152,1);
+            }
+            .c{
+            float: right;
+    
+            span{
+                display: inline-block;
+    
+                &:nth-child(1){
+                font-size:26px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:#282828;
+                }
+                &:nth-child(2){
+                font-size:26px;
+                font-family:PingFang SC;
+                font-weight:400;
+                color:#F64D4D;
+                }
+            }
+            }
+        }
+        }
+    }
+}

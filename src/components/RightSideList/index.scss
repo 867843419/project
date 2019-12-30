@@ -1,0 +1,36 @@
+@import '../../styles/mixin';
+@import "~taro-ui/dist/style/components/grid.scss";
+
+.right-side-list{
+    position: absolute;
+    top: 0;
+    left: 240px;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+
+    .right-side-list-img{
+        width: 100%;
+        height: 240px;
+    }
+
+    .grid{
+        margin-top: 50px;
+        
+        .content-inner__icon{
+            width: 80px;
+            height: 80px;
+        }
+
+        .at-grid__flex .content-inner__text{
+            font-size: 28px;
+            font-weight: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            display: inline-block;
+        }
+    }
+    
+}

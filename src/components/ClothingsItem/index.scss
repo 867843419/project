@@ -1,0 +1,228 @@
+@import '../../styles/base';
+@import "~taro-ui/dist/style/components/swipe-action.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/input-number.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.ClothingsItem-page {
+  box-sizing: border-box;
+  padding: 0 30px;
+
+  &.at-list::after{
+    border: 0 none;
+  }
+
+  .clo-action{
+    border:2px solid rgba(237,237,237,1);
+    border-radius:20px;
+    margin-top: 20px;
+  }
+  .clo-option{
+    width: 130px;
+    height: 100%;
+    line-height: 180px;
+    font-size: 52px;
+  }
+  .normal{
+    padding: 24px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .check{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+
+      .taro-checkbox_checked{
+        border-radius: 50%;
+      }
+    }
+    .img{
+      display: inline-block;
+      vertical-align: middle;
+      width: 150px;
+      height: 150px;
+
+      .taro-img{
+        height: 100%;
+      }
+    }
+    .box{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px;
+      width: 34%;
+
+      span{
+        display: block;
+        font-size:26px;
+        font-family:PingFang SC;
+        font-weight:400;
+        color:rgba(40,40,40,1);
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+
+        &.a{
+          font-size:26px;
+          color:rgba(40,40,40,1);
+          font-weight: bold;
+        }
+        &.b{
+          font-size:24px;
+          color:rgba(152,152,152,1);
+        }
+        &.c{
+          font-size:30px;
+          color:rgba(246,77,77,1);
+        }
+      }
+    }
+    .num{
+      display: inline-block;
+      vertical-align: middle;
+      text-align: right;
+
+      .valSpan{
+        width: 40px;
+      }
+
+      .at-input{
+        margin: 0;
+      }
+
+      .val{
+        width: 60px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+
+        .at-input__input{
+          padding-right: 0;
+        }
+      }
+
+      .isSale{
+        font-size: 20px;
+        color:rgba(246,77,77,1);
+        margin-top: 20px;
+        margin-right: 14px;
+      }
+
+      span{
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        line-height: 48px;
+        border-radius: 50%;
+        margin: 0 10px;
+
+        &.jian{
+          background: #A4BAF8;
+        }
+        &.jia{
+          background: rgb(78, 123, 255);
+        }
+      }
+    }
+  }
+  
+  .collect {
+    background-color: #fff;
+    border: 1px dashed #ccc;
+    color: #aaa;
+    font-size: 28px;
+    @include wh(100%, 180px);
+    @include fj(center);
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    .icon-add {
+      font-size: 36px;
+      margin-right: 20px;
+    }
+    .p {
+      width: 100%;
+      color: #cd8e98;
+      span {
+        display: inline-block;
+        font-size: 25px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .lose {
+    color: #bbb;
+    .size {
+      color: #bbb !important;
+    }
+    .am-tag {
+      background: #bbb !important;
+    }
+    .shop-img:after {
+      content: '已失效';
+      display: inline-block;
+      @include wh(100%, 40px);
+      line-height: 40px;
+      text-align: center;
+      @include sc(24px, #fff);
+      background: rgba(204, 204, 204, 0.9);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 9;
+    }
+  }
+  .clothing {
+    font-size: 25px;
+    @include wh(100%, 180px);
+    @include fj(flex-start);
+    align-items: center;
+    position: relative;
+    .shop-img {
+      position: relative;
+      height: 100%;
+      margin-right: 30px;
+      image,
+      .taro-img {
+        max-width: 120px;
+        width: 120px;
+        height: 180px;
+      }
+    }
+    .content {
+      line-height: 1.6;
+      padding-right: 60px;
+      .title {
+        font-size: 25px;
+        font-weight: 700;
+      }
+      .size {
+        @include sc(22px, #888);
+      }
+    }
+    .edit {
+      @include ct();
+      right: 0;
+      .add-price {
+        color: #cd8e98;
+        font-size: 25px;
+        .iconfont {
+          position: relative;
+          top: 2px;
+        }
+      }
+      .icon-delete {
+        @include sc(66px, #ccc);
+        float: right;
+      }
+    }
+  }
+  .balance {
+    @include sc(26px, #666);
+    line-height: 1.5;
+    .price {
+      @include sc(26px, #333);
+    }
+  }
+}

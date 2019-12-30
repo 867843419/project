@@ -1,0 +1,10 @@
+@import '../../styles/mixin';
+
+.search{
+    width: 100%;
+    box-sizing: border-box;
+
+    .at-search-bar::after{
+        border: 0 none;
+    }
+}

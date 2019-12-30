@@ -1,0 +1,24 @@
+@import '../../styles/mixin';
+
+.swiper-box{
+  width: 100%;
+
+  .swiper-box-detail {
+    width: 100%;
+    height: 450px;
+    image,
+    img {
+      height: 100%;
+    }
+  }
+
+  .swiper-box-home {
+    width: 100vw;
+    height: 286px;
+    image,
+    img {
+      height: 100%;
+    }
+  }
+
+}

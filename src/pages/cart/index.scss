@@ -1,0 +1,17 @@
+@import '../../styles/mixin';
+
+.cart-page {
+  @include wh(100%, 100%);
+  padding-top: 20px;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+
+  .no{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: #333;
+  }
+}

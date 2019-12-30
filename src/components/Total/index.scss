@@ -1,0 +1,67 @@
+@import '../../styles/mixin';
+
+.total{
+    .bottom-count {
+        width: 100%;
+        position: fixed;
+        bottom: 115px;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 40px;
+        background: #fff;
+        border-top:1px solid rgba(237,237,237,1);
+        padding-top: 20px;
+        padding-bottom: 30px;
+        .fj {
+          @include fj(space-between);
+          align-items: center;
+          font-size: 28px;
+          position: relative;
+          overflow: hidden;
+          .fj-left{
+            width: 30%;
+            float: left;
+            overflow: hidden;
+            margin-top: -10px;
+            .weui-cells_checkbox{
+              display: block;
+            }
+            .checkbox-list{
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              margin-right: 10px;
+            }
+          }
+          .fj-right{
+            width: 70%;
+            float: right;
+            text-align: right;
+            .total{
+              display: inline-block;
+              .price {
+                color: $color-primary;
+              }
+              .disabled {
+                color: #999;
+              }
+            }
+            .cart-btn {
+              display: inline-block;
+              background:rgba(78,123,255,1);
+              border-radius:28px;
+              color: #fff;
+              margin: 0;
+              padding: 0;
+              @include wh(180px, 56px);
+              line-height: 56px;
+              border: none;
+              font-weight: 200;
+              font-size: 26px;
+              margin-left: 20px;
+            }
+          }
+        }
+    }
+}
+
